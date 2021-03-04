@@ -32,10 +32,14 @@ create table tbProduto (
 create table tbVendedores (
     MATRICULA varchar(5),
     NOME varchar(100),
-    PERCENTUAL_COMISSAO float
+    PERCENTUAL_COMISSAO float,
+    DATA_ADMISSAO date,
+    DE_FERIAS bit
 );
 
 # Inserindo DADOS.
+
+******************* TABELA PRODUTO **********************
 
 insert into tbProduto (
     PRODUTO, NOME, EMBALAGEM, TAMANHO, SABOR, PRECO_LISTA)
@@ -64,28 +68,48 @@ values (
 alter table tbProduto add primary key (PRODUTO);
 
 *************************************************************
+
+
+******************* TABELA VENDEDORES **********************
+
 insert into tbVendedores (
-    MATRICULA, NOME, PERCENTUAL_COMISSAO)
+    MATRICULA, NOME, PERCENTUAL_COMISSAO, DATA_ADMISSAO, DE_FERIAS)
 values (
     '00233', 'João Geraldo da Fonseca', 0.10);
 
 insert into tbVendedores (
-    MATRICULA, NOME, PERCENTUAL_COMISSAO)
+    MATRICULA, NOME, PERCENTUAL_COMISSAO, DATA_ADMISSAO, DE_FERIAS)
 values (
-    '00235', 'Márcio Almeida Silva', 0.08);
+    '00235', 'Márcio Almeida Silva', 0.08, '2014-08-15', 0);
 
 insert into tbVendedores (
-    MATRICULA, NOME, PERCENTUAL_COMISSAO)
+    MATRICULA, NOME, PERCENTUAL_COMISSAO, DATA_ADMISSAO, DE_FERIAS)
 values (
-    '00236', 'Cláudia Morais', 0.08);
+    '00236', 'Cláudia Morais', 0.08, '2013-09-17', 1);
 
+insert into tbVendedores (
+     MATRICULA, NOME, PERCENTUAL_COMISSAO, DATA_ADMISSAO, DE_FERIAS)
+values (
+    '00237', 'Roberta Martins', 0.11, '2017-03-18', 1);
+
+insert into tbVendedores (
+     MATRICULA, NOME, PERCENTUAL_COMISSAO, DATA_ADMISSAO, DE_FERIAS)
+values (
+    '00238', 'Pericles Alves', 0.11, '2016-08-21', 0);
+
+************ ALTERAÇÔES TABELA tbVendedores*********************
+
+alter table tbVendedores add primary key (MATRICULA);
+
+******************* TABELA CLIENTES **********************
 
 insert into tbClientes (
     CPF< NOME, ENDERECO1, ENDERECO2, BAIRRO, CIDADE, ESTADO, CEP, IDADE, SEXO, LIMITE_CREDITO, VOLUME_COMPRA, PRIMEIRA_COMPRA, DATA_NASCIMENTO)
 values (
     '00388934505', 'João da Silva', 'Rua projetada A', '', 'Vila Roman', 'Caratinga', '2222222', 30, 'M', 10000.00, 2000, 0, '1989-10-05');
-)
-)
+
+
+
 ************ ALTERAÇÔES TABELA tbClientes*********************
 
 #Adicionando chave primaria(pk)
