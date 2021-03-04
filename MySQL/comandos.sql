@@ -11,5 +11,8 @@ drop table tbClientes;
 use sucos;
 
 # Criar tabelas
-
 create table tbClientes;
+
+# Inserir dados
+
+insert into tabela values valores

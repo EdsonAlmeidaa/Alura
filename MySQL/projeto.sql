@@ -35,3 +35,31 @@ create table tbVendedores (
     PERCENTUAL_COMISSAO float
 );
 
+# Inserindo DADOS.
+
+insert into tbProduto (
+    PRODUTO, NOME, EMBALAGEM, TAMANHO, SABOR, PRECO_LISTA)
+values (
+    '1040107', 'Light - 350 ml - Melância', 'Lata', '350 ml', 'Melancia', 4,56);
+
+insert into tbProduto (
+    PRODUTO, NOME, EMBALAGEM, TAMANHO, SABOR, PRECO_LISTA)
+values (
+    '1037797', 'Clean - 2 Litros - laranja', 'PET', '2 Litros', 'Laranja', 16.01);
+
+insert into tbProduto (
+     PRODUTO, NOME, EMBALAGEM, TAMANHO, SABOR, PRECO_LISTA)
+values (
+    '1000889', 'Sabor da Montanha - 700 ml - Uva', 'Garrafa', '700 ml', 'Uva', 6.31);
+
+insert into tbProduto (
+     PRODUTO, NOME, EMBALAGEM, TAMANHO, SABOR, PRECO_LISTA)
+values (
+    '1004327', 'Videira do Campo - 1,5 Litros - Melancia', 'PET','1,5 Litros', 'Melância', 19.51);
+
+
+insert into tbVendedores (
+    MATRICULA, NOME, PERCENTUAL_COMISSAO)
+values (
+    '00233', 'João Geraldo da Fonseca', 0.10);
+
