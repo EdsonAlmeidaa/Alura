@@ -86,4 +86,8 @@ values (
 
 alter table tbClientes add primary key (CPF);
 
+# Adicionando nova coluna
+
+alter table tbClientes add column (DATA_NASCIMENTO date);
+
 **************************************************************
