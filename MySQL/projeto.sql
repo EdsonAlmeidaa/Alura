@@ -80,6 +80,12 @@ values (
     '00236', 'Cláudia Morais', 0.08);
 
 
+insert into tbClientes (
+    CPF< NOME, ENDERECO1, ENDERECO2, BAIRRO, CIDADE, ESTADO, CEP, IDADE, SEXO, LIMITE_CREDITO, VOLUME_COMPRA, PRIMEIRA_COMPRA, DATA_NASCIMENTO)
+values (
+    '00388934505', 'João da Silva', 'Rua projetada A', '', 'Vila Roman', 'Caratinga', '2222222', 30, 'M', 10000.00, 2000, 0, '1989-10-05');
+)
+)
 ************ ALTERAÇÔES TABELA tbClientes*********************
 
 #Adicionando chave primaria(pk)
