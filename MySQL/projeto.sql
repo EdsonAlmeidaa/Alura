@@ -18,7 +18,20 @@ create table tbClientes (
     LIMITE_CREDITO float,
     VOLUME_COMPRA float,
     PRIMEIRA_COMPRA bit(1)
-)
-create table tbProduto;
-create table tbVendedores;
+);
+
+create table tbProduto (
+    PRODUTO varchar(20),
+    NOME varchar(150),
+    EMBALAGEM varchar(50),
+    TAMANHO varchar(50),
+    SABOR varchar(50),
+    PRECO_LISTA float
+);
+
+create table tbVendedores (
+    MATRICULA varchar(5),
+    NOME varchar(100),
+    PERCENTUAL_COMISSAO float
+);
 
