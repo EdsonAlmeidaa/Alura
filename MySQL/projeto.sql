@@ -58,6 +58,10 @@ values (
     '1004327', 'Videira do Campo - 1,5 Litros - Melancia', 'PET','1,5 Litros', 'Melância', 19.51);
 
 
+#Adicionando (pk)
+alter table tbProduto add primary key (PRODUTO);
+
+
 insert into tbVendedores (
     MATRICULA, NOME, PERCENTUAL_COMISSAO)
 values (
