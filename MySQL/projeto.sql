@@ -58,10 +58,12 @@ values (
     '1004327', 'Videira do Campo - 1,5 Litros - Melancia', 'PET','1,5 Litros', 'Melância', 19.51);
 
 
+************ ALTERAÇÔES TABELA tbProduto*********************
+
 #Adicionando (pk)
 alter table tbProduto add primary key (PRODUTO);
 
-
+*************************************************************
 insert into tbVendedores (
     MATRICULA, NOME, PERCENTUAL_COMISSAO)
 values (
@@ -76,3 +78,12 @@ insert into tbVendedores (
     MATRICULA, NOME, PERCENTUAL_COMISSAO)
 values (
     '00236', 'Cláudia Morais', 0.08);
+
+
+************ ALTERAÇÔES TABELA tbClientes*********************
+
+#Adicionando chave primaria(pk)
+
+alter table tbClientes add primary key (CPF);
+
+**************************************************************
