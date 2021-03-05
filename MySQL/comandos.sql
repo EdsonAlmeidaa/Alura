@@ -27,3 +27,10 @@ exemplo: delete from tbProduto where PRODUTO = '1078680';
 
 # Adicionando Chave primaria (PK)
 alter table tbProduto add primary key (PRODUTO);
+
+# Visualizar determinado DADOS.
+
+1) select * from tbClientes; # Visualizo todas aas colunas da tabela
+2) select CEP, NOME from tbClientes; # visualizo uma coluna específica.
+3) select CPF as CPF_CLIENTE, NOME as NOME_CLIENTE from tbClientes; # visualizo a coluna com um nome fantasia.
+4) select CPF from tbClientes limit 5; # limito o numero de dados para vizualizar.
