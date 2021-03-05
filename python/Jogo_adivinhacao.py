@@ -9,7 +9,7 @@ total_de_tentativas = 3
 rodada = 1
 
 while(rodada <= total_de_tentativas):
-    print('Tentativa', rodada, 'de', total_de_tentativas)
+    print('Tentativa {} de {}'.format(rodada, total_de_tentativas))
     chute_str = input('Digite o seu número: ') #solicitando ao usuário 
     print('Você digitou ', chute_str) # Visualizando o que foi digitado pelo usuário.
     chute = int(chute_str) # Variável
@@ -27,5 +27,5 @@ while(rodada <= total_de_tentativas):
             print('Você errou! O seu chute foi menor do que o número secreto.')
 
     rodada = rodada + 1
-    
+
 print('Fim!')
