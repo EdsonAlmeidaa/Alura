@@ -1,10 +1,12 @@
+import random
+
 #Informativo de boas vindas
 
 print('*************************************')
 print('Bem-vindo(a) no jogo de adivinhação! ')
 print('*************************************')
 
-numero_secreto = 42 #Variavél
+numero_secreto = random.randrange(1, 101) #Variavél
 total_de_tentativas = 3
 rodada = 1
 
