@@ -34,3 +34,4 @@ alter table tbProduto add primary key (PRODUTO);
 2) select CEP, NOME from tbClientes; # visualizo uma coluna específica.
 3) select CPF as CPF_CLIENTE, NOME as NOME_CLIENTE from tbClientes; # visualizo a coluna com um nome fantasia.
 4) select CPF from tbClientes limit 5; # limito o numero de dados para vizualizar.
+5) select * from tbClientes where CIDADE = 'Rio de Janeiro'; # retorna varios dados com a condição (CIDADE = 'Rio de Janeiro')
